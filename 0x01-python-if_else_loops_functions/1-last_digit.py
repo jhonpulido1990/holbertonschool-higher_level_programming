@@ -12,4 +12,4 @@ if last_digit == 0:
 elif last_digit < 6:
     print("Last digit of {:d} is {:d} ".format(number, last_digit), str)
 elif last_digit > 6:
-    print("Last digit of {:d} is {:d} ".format(number, last_digit), str)
+    print("Last digit of {:d} is {:d} ".format(number, last_digit), str1)
