@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 def uppercase(str):
     for w in str:
         if ord(w) > 96 and ord(w) < 123:
