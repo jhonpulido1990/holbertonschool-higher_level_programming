@@ -9,7 +9,6 @@
  */
 listint_t *insert_node(listint_t **head, int number)
 {
-	int i = 0;
 	listint_t *current = *head;
 	listint_t *insert;
 
