@@ -17,18 +17,24 @@ listint_t *insert_node(listint_t **head, int number)
 	if (insert == NULL)
 		return (NULL);
 	insert->n = number;
-	for (; current->next != NULL; i++)
-	{
-		current = current->next;
-		if (current->n >= insert->n)
-			break;
-	}
-	current = *head;
-	for (; i > 0; i--)
-	{
-		current = current->next;
-	}
-	insert->next = current->next;
-	current->next = insert;
-	return (insert);
+	insert->next = NULL;
+    if (*head == NULL)
+        *head = insert;
+    else
+    {
+        if (current->n >= number)
+        {
+            *head = insert;
+            insert->next = current;
+        }
+        else
+        {
+            while ((current->next != NULL) && (current->next->n <= number))
+                current = current->next;
+
+            insert->next = current->next;
+            current->next = insert;
+        }
+    }
+    return (insert);
 }
