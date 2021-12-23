@@ -12,4 +12,4 @@ else:
     for w in sys.argv:
         value = value + 1
         if (len(sys.argv)-1) >= value:
-            print("Argument List:", sys.argv[value])
+            print("{} :".format((len(sys.argv[value]))), sys.argv[value])
