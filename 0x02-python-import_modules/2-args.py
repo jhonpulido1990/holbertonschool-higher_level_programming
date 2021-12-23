@@ -11,4 +11,4 @@ if __name__ == "__main__":
     for w in sys.argv:
         value = value + 1
         if (len(sys.argv)-1) >= value:
-            print("{} :".format(value), sys.argv[value])
+            print("{}:".format(value), sys.argv[value])
