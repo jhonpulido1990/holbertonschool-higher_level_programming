@@ -11,7 +11,7 @@ if __name__ == "__main__":
         value = value + 1
     if (value - 1) < 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-        sys.exit(1)
+        exit(1)
     if operator == '+':
         print('{} + {} = {}'.format(a, b, add(a, b)))
     elif operator == '/':
@@ -22,4 +22,4 @@ if __name__ == "__main__":
         print('{} * {} = {}'.format(a, b, mul(a, b)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
-        sys.exit(1)
+        exit(1)
