@@ -3,15 +3,14 @@ if __name__ == "__main__":
     value = 0
     from calculator_1 import add, div, sub, mul
     import sys
-    a = int(sys.argv[1])
-    b = int(sys.argv[3])
-    operator = ""
-    operator = sys.argv[2]
     for w in sys.argv:
         value = value + 1
     if (value - 1) < 3:
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        print("Usage: {} <a> <operator> <b>".format(sys.argv[0]))
         exit(1)
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
+    operator = sys.argv[2]
     if operator == '+':
         print('{} + {} = {}'.format(a, b, add(a, b)))
     elif operator == '/':
