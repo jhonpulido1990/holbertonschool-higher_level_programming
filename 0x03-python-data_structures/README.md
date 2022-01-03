@@ -1,4 +1,4 @@
-*Python - Data Structures: Lists, Tuples*
+*PYTHOM - DATA STRUCTURES: LISTS, TUPLES*
 
 **0. Print a list of integers**
 Write a function that prints all integers of a list.
