@@ -9,7 +9,7 @@
  */
 int is_palindrome(listint_t **head)
 {
-	int i = 0, a = 0;
+	int i = 0, a = 0, b = 0;
 	listint_t *h = NULL;
 	int args[4024];
 
@@ -22,7 +22,8 @@ int is_palindrome(listint_t **head)
 		h = h->next;
 	}
 	a--;
-	for (i = 0; i <= a / 2; i++, a--)
+	b = a / 2;
+	for (i = 0; i <= b; i++, a--)
 	{
 		if (args[i] != args[a])
 		{
