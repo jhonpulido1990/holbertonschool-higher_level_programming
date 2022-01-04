@@ -28,8 +28,11 @@ int is_palindrome(listint_t **head)
 	for (i = 0; i <= a/2; i++)
 	{
 		if (args[i] != args[a - (i + 1)])
+		{
+			free(args);
 			return (0);
+		}
 	}
-	
+	free(args);
 	return (1);
 }
