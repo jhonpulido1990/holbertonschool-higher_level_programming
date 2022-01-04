@@ -1,2 +1,2 @@
 # holbertonschool-higher_level_programming
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=jhonpulido1990&theme=dark&show_icons=true)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jhonpulido1990&layout=compact)](https://github.com/jhonpulido1990/github-readme-stats)
