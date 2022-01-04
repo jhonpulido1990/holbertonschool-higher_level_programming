@@ -21,10 +21,10 @@ int is_palindrome(listint_t **head)
 		args[i] = h->n;
 		h = h->next;
 	}
-
-	for (i = 0; i <= a / 2; i++)
+	a--;
+	for (i = 0; i <= a / 2; i++, a--)
 	{
-		if (args[i] != args[--a])
+		if (args[i] != args[a])
 		{
 			return (0);
 		}
