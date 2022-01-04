@@ -12,9 +12,9 @@ int is_palindrome(listint_t **head)
 	listint_t *h = NULL;
 	char args[4024];
 
+	if (head == NULL)
+		return (1);
 	h = *head;
-	if (h == NULL)
-		return (0);
 	for (i = 0; h; i++,a++)
 	{
 		args[i] = h->n;
