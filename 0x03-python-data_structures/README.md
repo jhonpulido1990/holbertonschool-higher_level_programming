@@ -108,9 +108,21 @@ Prototype: def delete_at(my_list=[], idx=0):
 If idx is negative or out of range, nothing change (returns the same list)
 You are not allowed to use pop()
 You are not allowed to import any module
+
 ## _12. Switch
 Complete the source code in order to switch value of a and b
 
 You can find the source code here
 Your code should be inserted where the comment is (line 4)
 Your program should be exactly 5 lines long
+
+## _13. Linked list palindrome
+Technical interview preparation:
+
+You are not allowed to google anything
+Whiteboard first
+Write a function in C that checks if a singly linked list is a palindrome.
+
+Prototype: int is_palindrome(listint_t **head);
+Return: 0 if it is not a palindrome, 1 if it is a palindrome
+An empty list is considered a palindrome
