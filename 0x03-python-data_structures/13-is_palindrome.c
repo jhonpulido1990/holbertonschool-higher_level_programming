@@ -3,26 +3,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * @brief
- *
+ * is_palindrome - validator if likend list is palindrome
+ * @head: likend list
+ * Return: 0 or 1
  */
 int is_palindrome(listint_t **head)
 {
 	int i = 0, a = 0;
 	listint_t *h = NULL;
-	char args[4024];
+	int args[4024];
 
 	if (head == NULL)
 		return (1);
 	h = *head;
-	for (i = 0; h; i++,a++)
+	for (i = 0; h; i++, a++)
 	{
 		args[i] = h->n;
 		h = h->next;
 	}
-	for (i = 0; i <= a/2; i++)
+
+	for (i = 0; i <= a / 2; i++)
 	{
-		if (args[i] != args[a - (i + 1)])
+		if (args[i] != args[--a])
 		{
 			return (0);
 		}
