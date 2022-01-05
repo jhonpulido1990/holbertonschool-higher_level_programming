@@ -1,3 +1,5 @@
 #!/usr/bin/python3
 def number_keys(a_dictionary):
-    return a_dictionary.get('number')
+    for i in a_dictionary:
+        if i != str:
+            return a_dictionary.get('number')
