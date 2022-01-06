@@ -2,7 +2,7 @@
 def roman_to_int(roman_string):
     numb = []
     a = []
-    if not roman_string:
+    if not (isinstance(roman_string, str)):
         return 0
     for i in roman_string:
         if i == 'I':
