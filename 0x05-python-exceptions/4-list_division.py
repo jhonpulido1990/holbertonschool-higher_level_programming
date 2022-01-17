@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-from copy import copy
-from pickle import APPEND
-
-
 def list_division(my_list_1, my_list_2, list_length):
     lent = 0
     resuk = []
