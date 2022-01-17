@@ -8,6 +8,6 @@ def safe_print_division(a, b):
         result = a / b
         return result
     except:
-        pass
+        return None
     finally:
         print("Inside result: {}".format(result))
