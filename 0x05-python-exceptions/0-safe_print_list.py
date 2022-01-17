@@ -7,6 +7,6 @@ def safe_print_list(my_list=[], x=0):
                 print("{}".format(my_list[j - 1]), end='')
                 a = a + 1
         except:
-            break;
+            break
     print()
     return a
