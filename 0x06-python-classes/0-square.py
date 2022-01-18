@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'''create class'''
 class Square:
-    '''type class'''
+    '''declation class'''
     pass
