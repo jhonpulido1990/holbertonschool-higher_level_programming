@@ -1,9 +1,5 @@
 #!/usr/bin/python3
 
-
-from logging import exception
-
-
 class Square:
     def __init__(self, size=0):
             self.size = size
