@@ -38,15 +38,10 @@ class Square:
         return self.__size ** 2
 
     def my_print(self):
-        x = 0
-        z = 0
-        while(z < self.__position[1]):
+        if self.__size == 0:
             print()
-            z += 1
-        if (self.__size == 0):
+            return
+        for i in range(self.__position[1]):
             print()
-        while(x < self.__size):
-            print(" " * self.__position[0], end='')
-            print("#" * self.__size, end='')
-            print()
-            x += 1
+        for j in range(self.__size):
+            print("{}{}".format(" " * self.position[0], "#" * self.__size))
