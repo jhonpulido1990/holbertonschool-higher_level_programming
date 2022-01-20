@@ -2,9 +2,6 @@
 '''create class'''
 
 
-from multiprocessing.sharedctypes import Value
-
-
 class Square:
     '''create definition'''
     def __init__(self, size=0, position=(0, 0)):
