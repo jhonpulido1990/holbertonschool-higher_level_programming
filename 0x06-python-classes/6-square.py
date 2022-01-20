@@ -2,6 +2,9 @@
 '''create class'''
 
 
+from multiprocessing.sharedctypes import Value
+
+
 class Square:
     '''create definition'''
     def __init__(self, size=0, position=(0, 0)):
@@ -27,16 +30,12 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if (type(value) is not tuple):
-            raise TypeError("position must be a tuple of 2 positive integer")
-        elif len(value) is not 2:
-            raise TypeError("position must be a tuple of 2 positive integer")
-        elif (type(value[0]) != int or type(value[1]) != int):
-            raise TypeError("position must be a tuple of 2 positive integer")
-        elif (value[0] < 0 or value[1] < 0):
-            raise TypeError("position must be a tuple of 2 positive integer")
-        else:
+        if isinstance(value, tuple) and len(value) is 2 and\
+                isinstance(value[0], int) and isinstance(value[1], int) and\
+                value[0] >= 0 and value[1] >= 0:
             self.__position = value
+        else:
+            raise TypeError("position must be a tuple of 2 positive integers")
 
     def area(self):
         return self.__size ** 2
