@@ -2,9 +2,6 @@
 '''create un class rectangle'''
 
 
-from turtle import width
-
-
 class Rectangle:
     '''define class with funtion methode'''
     def __init__(self, width=0, height=0):
