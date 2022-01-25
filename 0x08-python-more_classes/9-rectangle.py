@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 '''create un class rectangle'''
 
+
 class Rectangle:
     '''define class with funtion methode'''
+
     number_of_instances = 0
     print_symbol = '#'
 
     def __init__(self, width=0, height=0):
-        self.height = height
         self.width = width
+        self.height = height
         Rectangle.number_of_instances += 1
 
     def __del__(self):
