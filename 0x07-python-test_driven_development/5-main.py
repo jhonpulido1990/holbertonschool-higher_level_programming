@@ -12,4 +12,7 @@ text_indentation = __import__('5-text_indentation').text_indentation
 #beatiorem! Iam ruinas videres""")
 
 
-text_indentation("""hello:""")
+text_indentation("""hello:
+    
+    
+world        hello?       world""")

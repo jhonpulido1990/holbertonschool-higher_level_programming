@@ -11,7 +11,7 @@ This is an 5-text_indentation text file in reStructuredText format.  First impor
 
 Now use it:
 
-    ... >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
+    >>> text_indentation("""Lorem ipsum dolor sit amet, consectetur adipiscing elit. \
     ... Quonam modo? Utrum igitur tibi litteram videor an totas paginas commovere? \
     ... Non autem hoc: igitur ne illud quidem. Fortasse id optimum, sed ubi illud: \
     ... Plus semper voluptatis? Teneo, inquit, finem illi videri nihil dolere. \
@@ -48,13 +48,16 @@ Now use it:
     <BLANKLINE>
     Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
 
-    ... >>> text_indentation("""hello:
+    >>> text_indentation("""hello:
     ... 
     ... 
     ... world        hello?       world""")
     hello:
     <BLANKLINE>
-    world hello?
+    <BLANKLINE>
+    <BLANKLINE>
+    <BLANKLINE>
+    world        hello?
     <BLANKLINE>
     world
 
