@@ -13,7 +13,10 @@ class TestMaxInteger(unittest.TestCase):
         
 
     def test_float(self):
-        self.assertEqual(max_integer([1, 2, 3, 4]), 4.3)
+        self.assertNotEqual(max_integer([1, 2, 3, 4]), 4.3)
+
+    def test_strin(self):
+        self.assertIsInstance(max_integer([1, 2, 3, 4]), int)
 
 if __name__ == "__main__":
     unittest.main()
