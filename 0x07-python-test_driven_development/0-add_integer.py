@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-'''This function allows 
-you to add two integers or floats and its 
+'''This function allows
+you to add two integers or floats and its
 result is an integer.
 add_integer(1, 3)
 4 '''
