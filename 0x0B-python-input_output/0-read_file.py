@@ -13,5 +13,5 @@ def read_file(filename=""):
     with open(filename, encoding='utf_8') as f:
         data_read = f.read()
         stdout = data_read
-        print(stdout)
+        print(stdout, end='')
     f.close()
