@@ -20,3 +20,11 @@ Now use it:
     >>> print(my_list)
     [1, 4, 2, 3, 5]
 
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append('a')
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append('z')
+    >>> print(my_list)
+    [1, 'a', 2, 3, 'z']
