@@ -28,3 +28,11 @@ Now use it:
     >>> my_list.append('z')
     >>> print(my_list)
     [1, 'a', 2, 3, 'z']
+
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append('z')
+    >>> print(my_list)
+    [1, 2, 3, 'z']
