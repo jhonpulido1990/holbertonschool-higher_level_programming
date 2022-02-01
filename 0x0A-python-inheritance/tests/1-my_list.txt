@@ -1,46 +1,97 @@
-The ``1-my_list`` module
+The 1-my_list module to test
 ======================
 
-Using ``MyList``
--------------------
+Using 1-my_list
+-----------------
 
-This is an 1-my_list text file in reStructuredText format.  First import
-``MyList`` from the ``1-my_list`` module:
+Import my_list from module
 
-    >>> MyList = __import__('1-my_list').MyList
+>>> MyList = __import__('1-my_list').MyList
 
-Now use it:
 
-    >>> my_list = MyList()
-    >>> my_list.append(1)
-    >>> my_list.append(4)
-    >>> my_list.append(2)
-    >>> my_list.append(3)
-    >>> my_list.append(5)
-    >>> print(my_list)
-    [1, 4, 2, 3, 5]
+>>> my_list = MyList()
 
-    >>> my_list = MyList()
-    >>> my_list.append(1)
-    >>> my_list.append('a')
-    >>> my_list.append(2)
-    >>> my_list.append(3)
-    >>> my_list.append('z')
-    >>> print(my_list)
-    [1, 'a', 2, 3, 'z']
+>>> my_list.append(-5)
 
-    >>> my_list = MyList()
-    >>> my_list.append(1)
-    >>> my_list.append(2)
-    >>> my_list.append(3)
-    >>> my_list.append('z')
-    >>> print(my_list)
-    [1, 2, 3, 'z']
+>>> my_list.append(-4)
 
-    >>> my_list = MyList()
-    >>> my_list.append(1)
-    >>> my_list.append(2)
-    >>> my_list.append(3)
-    >>> my_list.append(True)
-    >>> print(my_list)
-    [1, 2, 3, 'z']
+>>> my_list.append(-3)
+
+>>> my_list.append(-2)
+
+>>> my_list.append(-1)
+
+>>> print(my_list)
+[-5, -4, -3, -2, -1]
+
+>>> my_list.print_sorted()
+[-5, -4, -3, -2, -1]
+
+>>> print(my_list)
+[-5, -4, -3, -2, -1]
+
+>>> my_list = MyList()
+
+>>> my_list.append(4)
+
+>>> my_list.append(8)
+
+>>> my_list.append(7)
+
+>>> my_list.append(1)
+
+>>> print(my_list)
+[4, 8, 7, 1]
+
+>>> my_list.print_sorted()
+[1, 4, 7, 8]
+
+>>> print(my_list)
+[4, 8, 7, 1]
+
+>>> MyList.print_sorted()
+Traceback (most recent call last):
+TypeError: print_sorted() missing 1 required positional argument: 'self'
+
+>>> my_list = MyList()
+
+>>> print(my_list)
+[]
+
+>>> my_list.print_sorted()
+[]
+
+>>> print(my_list)
+[]
+
+>>> my_list.append(-5)
+
+>>> my_list.append(-4)
+
+>>> my_list.append(-3)
+
+>>> my_list.append(-1)
+
+>>> my_list.append(-2)
+
+>>> print(my_list)
+[-5, -4, -3, -1, -2]
+
+>>> my_list.print_sorted()
+[-5, -4, -3, -2, -1]
+
+>>> print(my_list)
+[-5, -4, -3, -1, -2]
+
+>>> my_list = MyList()
+
+>>> my_list.append(40)
+
+>>> print(my_list)
+[40]
+
+>>> my_list.print_sorted()
+[40]
+
+>>> print(my_list)
+[40]
