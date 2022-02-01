@@ -4,6 +4,8 @@ Write a class BaseGeometry (based on 6-base_geometry.py).
 Public instance method: def area(self): that raises an
 Exception with the message area() is not implemented
 '''
+
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
@@ -19,6 +21,6 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         return "[Rectangle] {}/{}".format(self.__width, self.__height)
-    
+
     def area(self):
         return self.__width * self.__height
