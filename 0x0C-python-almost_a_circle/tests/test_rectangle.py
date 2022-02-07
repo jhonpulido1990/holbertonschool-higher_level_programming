@@ -9,9 +9,9 @@ from models.rectangle import Rectangle
 class Test_rectangle(unittest.TestCase):
     def test_rectangle_int(self):
         r1 = Rectangle(10, 2)
-        self.assertEqual(r1.id, 8)
+        self.assertEqual(r1.id, 11)
         r2 = Rectangle(2, 10)
-        self.assertEqual(r2.id, 9)
+        self.assertEqual(r2.id, 12)
         r3 = Rectangle(10, 2, 0, 0, 12)
         self.assertEqual(r3.id, 12)
 
@@ -24,4 +24,13 @@ class Test_rectangle(unittest.TestCase):
         with self.assertRaises(TypeError):
             r = Rectangle(10, 2)
             r.x = {}
+        with self.assertRaises(ValueError):
+            Rectangle(10, 2, 3, -1)
 
+    def test_base_area(self):
+        r1 = Rectangle(3, 2)
+        self.assertEqual(r1.area(), 6)
+        r2 = Rectangle(2, 10)
+        self.assertEqual(r2.area(), 20)
+        r3 = Rectangle(8, 7, 0, 0, 12)
+        self.assertEqual(r3.area(), 56)
