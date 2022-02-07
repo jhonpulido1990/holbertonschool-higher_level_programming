@@ -62,4 +62,4 @@ class Base:
                 listing.append(cls.create(**instance))
             return listing
         except FileNotFoundError:
-            pass
+            return []
