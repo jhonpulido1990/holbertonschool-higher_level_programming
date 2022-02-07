@@ -65,20 +65,20 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-#    def area(self):
-#        return self.__width * self.__height
+    # def area(self):
+    #     return self.__width * self.__height
 
-#    def display(self):
-#        rect = ""
- #       rect = "\n" * self.y
-  #      for i in range(self.height):
-#            rect += ' ' * self.x + '#' * self.width
- #           if i < (self.height - 1):
- #               rect += '\n'
- #       print(rect)
+    # def display(self):
+    #     rect = ""
+    #     rect = "\n" * self.y
+    #     for i in range(self.height):
+    #         rect += ' ' * self.x + '#' * self.width
+    #         if i < (self.height - 1):
+    #             rect += '\n'
+    #     print(rect)
 
-#    def __str__(self):
- #       return "[Rectangle] ({}) {}/{} - {}/{}".format(
+    # def __str__(self):
+    #     return "[Rectangle] ({}) {}/{} - {}/{}".format(
     #         self.id, self.__x, self.__y, self.__width, self.__height)
 
     # def update(self, *args, **kwargs):
