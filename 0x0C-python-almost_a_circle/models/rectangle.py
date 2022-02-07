@@ -65,33 +65,33 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-    # def area(self):
-    #     return self.width * self.height
+    def area(self):
+        return self.width * self.height
 
-    # def display(self):
-    #     rect = ""
-    #     rect = "\n" * self.y
-    #     for i in range(self.height):
-    #         rect += ' ' * self.x + '#' * self.width
-    #         if i < (self.height - 1):
-    #             rect += '\n'
-    #     print(rect)
+    def display(self):
+        rect = ""
+        rect = "\n" * self.y
+        for i in range(self.height):
+            rect += ' ' * self.x + '#' * self.width
+            if i < (self.height - 1):
+                rect += '\n'
+        print(rect)
 
-    # def __str__(self):
-    #     return "[Rectangle] ({}) {}/{} - {}/{}".format(
-    #         self.id, self.__x, self.__y, self.__width, self.__height)
+    def __str__(self):
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.__x, self.__y, self.__width, self.__height)
 
-    # def update(self, *args, **kwargs):
-    #     attr = ["id", "width", "height", "x", "y"]
-    #     if kwargs is not None:
-    #         for key, value in kwargs.items():
-    #             setattr(self, key, value)
-    #     for i in range(len(args)):
-    #         if hasattr(self, attr[i]):
-    #             setattr(self, attr[i], args[i])
+    def update(self, *args, **kwargs):
+        attr = ["id", "width", "height", "x", "y"]
+        if kwargs is not None:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        for i in range(len(args)):
+            if hasattr(self, attr[i]):
+                setattr(self, attr[i], args[i])
 
-    # def to_dictionary(self):
-    #     dic = {}
-    #     dic.update(x=self.__x, y=self.__y, id=self.id,
-    #                height=self.__height, width=self.__width)
-    #     return dic
+    def to_dictionary(self):
+        dic = {}
+        dic.update(x=self.__x, y=self.__y, id=self.id,
+                   height=self.__height, width=self.__width)
+        return dic
