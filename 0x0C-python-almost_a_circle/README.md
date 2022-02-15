@@ -1,6 +1,13 @@
 # 0x0C. Python - Almost a circle
 ## Details
-      By Guillaume          Weight: 1                Ongoing project - started 02-03-2022, must end by 02-08-2022 (in 5 days)          - you're done with 0% of tasks.              Checker will be released at 02-07-2022 12:00 PM      Manual QA review must be done          (request it when you are done with the project)              QA review fully automated.      ## Background Context
+      By Guillaume          Weight: 1              Project over - took place from 02-03-2022 to 02-08-2022          - you're done with 145% of tasks.                Manual QA review was done on 02-15-2022.              An auto review will be launched at the deadline      #### In a nutshell…
+* Manual QA review:          0.0/0 mandatory            &            0.0/11 optional      
+* Auto QA review:          602.0/669 mandatory            &            17.0/17 optional      
+* Altogether:         144.62%* Mandatory: 89.99%
+* Optional: 60.71%
+*               Calculation:                   89.99%                    + (89.99% * 60.71%)               == 144.62%
+
+## Background Context
 The AirBnB project is a big part of the Higher level curriculum. This project will help you be ready for it.
 In this project, you will review everything about Python:
 * Import
@@ -65,7 +72,7 @@ At the end of this project, you are expected to be able to  [explain to anyone](
 * We strongly encourage you to work together on test cases so that you don’t miss any edge case
 ## Tasks
 ### 0. If it's not tested it doesn't work
-          mandatory         Progress vs Score  Task Body All your files, classes and methods must be unit tested and be PEP 8 validated. 
+          mandatory         Progress vs Score           Score: 19.28% (Checks completed: 19.28%)         Task Body All your files, classes and methods must be unit tested and be PEP 8 validated. 
 ```bash
 guillaume@ubuntu:~/$ python3 -m unittest discover tests
 ...................................................................................
@@ -85,7 +92,7 @@ Note that this is just an example. The number of tests you create can be differe
 * File:  ` tests/ ` 
  Self-paced manual review  Panel footer - Controls 
 ### 1. Base class
-          mandatory         Progress vs Score  Task Body Write the first class   ` Base `  :
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write the first class   ` Base `  :
 Create a folder named   ` models `   with an empty file   ` __init__.py `   inside - with this file, the folder will become a Python package
 Create a file named   ` models/base.py `  :
 * Class  ` Base ` :* private class attribute  ` __nb_objects = 0 ` 
@@ -132,7 +139,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/base.py, models/__init__.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 2. First Rectangle
-          mandatory         Progress vs Score  Task Body Write the class   ` Rectangle `   that inherits from   ` Base `  :
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write the class   ` Rectangle `   that inherits from   ` Base `  :
 * In the file  ` models/rectangle.py ` 
 * Class  ` Rectangle `  inherits from  ` Base ` 
 * Private instance attributes, each with its own public getter and setter:*  ` __width `  ->  ` width ` 
@@ -175,7 +182,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 3. Validate attributes
-          mandatory         Progress vs Score  Task Body Update the class   ` Rectangle `   by adding validation of all setter methods and instantiation (  ` id `   excluded):
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Rectangle `   by adding validation of all setter methods and instantiation (  ` id `   excluded):
 * If the input is not an integer, raise the  ` TypeError `  exception with the message:  ` <name of the attribute> must be an integer ` . Example:  ` width must be an integer ` 
 * If  ` width `  or  ` height `  is under or equals 0, raise the  ` ValueError `  exception with the message:  ` <name of the attribute> must be > 0 ` . Example:  ` width must be > 0 ` 
 * If  ` x `  or  ` y `  is under 0, raise the  ` ValueError `  exception with the message:  ` <name of the attribute> must be >= 0 ` . Example:  ` x must be >= 0 ` 
@@ -223,7 +230,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 4. Area first
-          mandatory         Progress vs Score  Task Body Update the class   ` Rectangle `   by adding the public method   ` def area(self): `   that returns the area value of the   ` Rectangle `   instance.
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Rectangle `   by adding the public method   ` def area(self): `   that returns the area value of the   ` Rectangle `   instance.
 ```bash
 guillaume@ubuntu:~/$ cat 3-main.py
 #!/usr/bin/python3
@@ -254,7 +261,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 5. Display #0
-          mandatory         Progress vs Score  Task Body Update the class   ` Rectangle `   by adding the public method   ` def display(self): `   that prints in stdout the   ` Rectangle `   instance with the character   ` # `   - you don’t need to handle   ` x `   and   ` y `   here.
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Rectangle `   by adding the public method   ` def display(self): `   that prints in stdout the   ` Rectangle `   instance with the character   ` # `   - you don’t need to handle   ` x `   and   ` y `   here.
 ```bash
 guillaume@ubuntu:~/$ cat 4-main.py
 #!/usr/bin/python3
@@ -290,7 +297,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 6. __str__
-          mandatory         Progress vs Score  Task Body Update the class   ` Rectangle `   by overriding the   ` __str__ `   method so that it returns   ` [Rectangle] (<id>) <x>/<y> - <width>/<height> ` 
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Rectangle `   by overriding the   ` __str__ `   method so that it returns   ` [Rectangle] (<id>) <x>/<y> - <width>/<height> ` 
 ```bash
 guillaume@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/python3
@@ -317,7 +324,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 7. Display #1
-          mandatory         Progress vs Score  Task Body Update the class   ` Rectangle `   by improving the public method   ` def display(self): `   to print in stdout the   ` Rectangle `   instance with the character   ` # `   by taking care of   ` x `   and   ` y ` 
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Rectangle `   by improving the public method   ` def display(self): `   to print in stdout the   ` Rectangle `   instance with the character   ` # `   by taking care of   ` x `   and   ` y ` 
 ```bash
 guillaume@ubuntu:~/$ cat 6-main.py
 #!/usr/bin/python3
@@ -352,7 +359,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 8. Update #0
-          mandatory         Progress vs Score  Task Body Update the class   ` Rectangle `   by adding the public method   ` def update(self, *args): `   that assigns an argument to each attribute:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Rectangle `   by adding the public method   ` def update(self, *args): `   that assigns an argument to each attribute:
 * 1st argument should be the  ` id `  attribute
 * 2nd argument should be the  ` width `  attribute
 * 3rd argument should be the  ` height `  attribute
@@ -401,7 +408,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 9. Update #1
-          mandatory         Progress vs Score  Task Body Update the class   ` Rectangle `   by updating the public method   ` def update(self, *args): `   by changing the prototype to   ` update(self, *args, **kwargs) `   that assigns a key/value argument to attributes:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Rectangle `   by updating the public method   ` def update(self, *args): `   by changing the prototype to   ` update(self, *args, **kwargs) `   that assigns a key/value argument to attributes:
 *  ` **kwargs `  can be thought of as a double pointer to a dictionary: key/value* As Python doesn’t have pointers,  ` **kwargs `  is not literally a double pointer – describing it as such is just a way of explaining its behavior in terms you’re already familiar with
 
 *  ` **kwargs `  must be skipped if  ` *args `  exists and is not empty
@@ -445,7 +452,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 10. And now, the Square!
-          mandatory         Progress vs Score  Task Body Write the class   ` Square `   that inherits from   ` Rectangle `  :
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write the class   ` Square `   that inherits from   ` Rectangle `  :
 * In the file  ` models/square.py ` 
 * Class  ` Square `  inherits from  ` Rectangle ` 
 * Class constructor:  ` def __init__(self, size, x=0, y=0, id=None): ` :* Call the super class with  ` id ` ,  ` x ` ,  ` y ` ,  ` width `  and  ` height `  - this super call will use the logic of the  ` __init__ `  of the  ` Rectangle `  class. The  ` width `  and  ` height `  must be assigned to the value of  ` size ` 
@@ -512,7 +519,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/square.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 11. Square size
-          mandatory         Progress vs Score  Task Body Update the class   ` Square `   by adding the public getter and setter   ` size ` 
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Square `   by adding the public getter and setter   ` size ` 
 * The setter should assign (in this order) the  ` width `  and the  ` height `  - with the same value
 * The setter should have the same value validation as the  ` Rectangle `  for  ` width `  and  ` height `  - No need to change the exception error message (It should be the one from  ` width ` )
 ```bash
@@ -548,7 +555,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/square.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 12. Square update
-          mandatory         Progress vs Score  Task Body Update the class   ` Square `   by adding the public method   ` def update(self, *args, **kwargs) `   that assigns attributes:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Square `   by adding the public method   ` def update(self, *args, **kwargs) `   that assigns attributes:
 *  ` *args `  is the list of arguments - no-keyworded arguments* 1st argument should be the  ` id `  attribute
 * 2nd argument should be the  ` size `  attribute
 * 3rd argument should be the  ` x `  attribute
@@ -607,7 +614,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/square.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 13. Rectangle instance to dictionary representation
-          mandatory         Progress vs Score  Task Body Update the class   ` Rectangle `   by adding the public method   ` def to_dictionary(self): `   that returns the dictionary representation of a   ` Rectangle `  :
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Rectangle `   by adding the public method   ` def to_dictionary(self): `   that returns the dictionary representation of a   ` Rectangle `  :
 This dictionary must contain:
 *  ` id ` 
 *  ` width ` 
@@ -650,7 +657,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 14. Square instance to dictionary representation
-          mandatory         Progress vs Score  Task Body Update the class   ` Square `   by adding the public method   ` def to_dictionary(self): `   that returns the dictionary representation of a   ` Square `  :
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Square `   by adding the public method   ` def to_dictionary(self): `   that returns the dictionary representation of a   ` Square `  :
 This dictionary must contain:
 *  ` id ` 
 *  ` size ` 
@@ -692,7 +699,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/square.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 15. Dictionary to JSON string
-          mandatory         Progress vs Score  Task Body JSON is one of the standard formats for sharing data representation.
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body JSON is one of the standard formats for sharing data representation.
 Update the class   ` Base `   by adding the static method   ` def to_json_string(list_dictionaries): `   that returns the JSON string representation of   ` list_dictionaries `  :
 *  ` list_dictionaries `  is a list of dictionaries
 * If  ` list_dictionaries `  is  ` None `  or empty, return the string:  ` "[]" ` 
@@ -728,7 +735,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/base.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 16. JSON string to file
-          mandatory         Progress vs Score  Task Body Update the class   ` Base `   by adding the class method   ` def save_to_file(cls, list_objs): `   that writes the JSON string representation of   ` list_objs `   to a file:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Base `   by adding the class method   ` def save_to_file(cls, list_objs): `   that writes the JSON string representation of   ` list_objs `   to a file:
 *  ` list_objs `  is a list of instances who inherits of  ` Base `  - example: list of  ` Rectangle `  or list of  ` Square `  instances
 * If  ` list_objs `  is  ` None ` , save an empty list
 * The filename must be:  ` <Class name>.json `  - example:  ` Rectangle.json ` 
@@ -760,7 +767,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/base.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 17. JSON string to dictionary
-          mandatory         Progress vs Score  Task Body Update the class   ` Base `   by adding the static method   ` def from_json_string(json_string): `   that returns the list of the JSON string representation   ` json_string `  :
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Base `   by adding the static method   ` def from_json_string(json_string): `   that returns the list of the JSON string representation   ` json_string `  :
 *  ` json_string `  is a string representing a list of dictionaries
 * If  ` json_string `  is  ` None `  or empty, return an empty list
 * Otherwise, return the list represented by  ` json_string ` 
@@ -795,7 +802,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/base.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 18. Dictionary to Instance
-          mandatory         Progress vs Score  Task Body Update the class   ` Base `   by adding the class method   ` def create(cls, **dictionary): `   that returns an instance with all attributes already set:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Base `   by adding the class method   ` def create(cls, **dictionary): `   that returns an instance with all attributes already set:
 *  ` **dictionary `  can be thought of as a double pointer to a dictionary
 * To use the  ` update `  method to assign all attributes, you must create a “dummy” instance before: * Create a  ` Rectangle `  or  ` Square `  instance with “dummy” mandatory attributes (width, height, size, etc.)
 * Call  ` update `  instance method to this “dummy” instance to apply your real values
@@ -833,7 +840,7 @@ guillaume@ubuntu:~/$
 * File:  ` models/base.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 19. File to instances
-          mandatory         Progress vs Score  Task Body Update the class   ` Base `   by adding the class method   ` def load_from_file(cls): `   that returns a list of instances:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Base `   by adding the class method   ` def load_from_file(cls): `   that returns a list of instances:
 * The filename must be:  ` <Class name>.json `  - example:  ` Rectangle.json ` 
 * If the file doesn’t exist, return an empty list
 * Otherwise, return a list of instances - the type of these instances depends on  ` cls `  (current class using this method)
@@ -903,9 +910,117 @@ guillaume@ubuntu:~/$
 * Directory:  ` 0x0C-python-almost_a_circle ` 
 * File:  ` models/base.py ` 
  Self-paced manual review  Panel footer - Controls 
-[Done with the mandatory tasks? Unlock 2 advanced tasks now!](https://intranet.hbtn.io/projects/331/unlock_optionals) 
+### 20. JSON ok, but CSV?
+          #advanced         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Update the class   ` Base `   by adding the class methods   ` def save_to_file_csv(cls, list_objs): `   and   ` def load_from_file_csv(cls): `   that serializes and deserializes in CSV:
+* The filename must be:  ` <Class name>.csv `  - example:  ` Rectangle.csv ` 
+* Has the same behavior as the JSON serialization/deserialization
+* Format of the CSV:* Rectangle:  ` <id>,<width>,<height>,<x>,<y> ` 
+* Square:  ` <id>,<size>,<x>,<y> ` 
 
-Ready for a manualreview×#### Recommended Sandbox
+```bash
+guillaume@ubuntu:~/$ cat 100-main.py
+#!/usr/bin/python3
+""" 100-main """
+from models.rectangle import Rectangle
+from models.square import Square
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(10, 7, 2, 8)
+    r2 = Rectangle(2, 4)
+    list_rectangles_input = [r1, r2]
+
+    Rectangle.save_to_file_csv(list_rectangles_input)
+
+    list_rectangles_output = Rectangle.load_from_file_csv()
+
+    for rect in list_rectangles_input:
+        print("[{}] {}".format(id(rect), rect))
+
+    print("---")
+
+    for rect in list_rectangles_output:
+        print("[{}] {}".format(id(rect), rect))
+
+    print("---")
+    print("---")
+
+    s1 = Square(5)
+    s2 = Square(7, 9, 1)
+    list_squares_input = [s1, s2]
+
+    Square.save_to_file_csv(list_squares_input)
+
+    list_squares_output = Square.load_from_file_csv()
+
+    for square in list_squares_input:
+        print("[{}] {}".format(id(square), square))
+
+    print("---")
+
+    for square in list_squares_output:
+        print("[{}] {}".format(id(square), square))
+
+guillaume@ubuntu:~/$ ./100-main.py
+[140268695797600] [Rectangle] (1) 2/8 - 10/7
+[140268695797656] [Rectangle] (2) 0/0 - 2/4
+---
+[140268695529008] [Rectangle] (1) 2/8 - 10/7
+[140268695528952] [Rectangle] (2) 0/0 - 2/4
+---
+---
+[140268695822520] [Square] (5) 0/0 - 5
+[140268695826328] [Square] (6) 9/1 - 7
+---
+[140268695529232] [Square] (5) 0/0 - 5
+[140268695529176] [Square] (6) 9/1 - 7
+guillaume@ubuntu:~/$ 
+
+```
+ Task URLs  Github information Repo:
+* GitHub repository:  ` holbertonschool-higher_level_programming ` 
+* Directory:  ` 0x0C-python-almost_a_circle ` 
+* File:  ` models/ ` 
+ Self-paced manual review  Panel footer - Controls 
+### 21. Let's draw it
+          #advanced         Progress vs Score           Score: 0.00% (Checks completed: 0.00%)         Task Body Update the class   ` Base `   by adding the static method   ` def draw(list_rectangles, list_squares): `   that opens a window and draws all the   ` Rectangles `   and   ` Squares `  :
+* You must use the [Turtle graphics module](https://intranet.hbtn.io/rltoken/AuDu9jy9zmIN12YpQaHm0A) 
+
+* To install it:  ` sudo apt-get install python3-tk ` 
+* To make the GUI available outside your vagrant machine, add this line in your Vagrantfile:  ` config.ssh.forward_x11 = true ` 
+* No constraints for color, shape etc… be creative!
+```bash
+guillaume@ubuntu:~/$ cat 101-main.py
+#!/usr/bin/python3
+""" 101-main """
+from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
+
+if __name__ == "__main__":
+
+    list_rectangles = [Rectangle(100, 40), Rectangle(90, 110, 30, 10), Rectangle(20, 25, 110, 80)]
+    list_squares = [Square(35), Square(15, 70, 50), Square(80, 30, 70)]
+
+    Base.draw(list_rectangles, list_squares)
+
+guillaume@ubuntu:~/$ ./101-main.py
+....
+
+```
+* Uncommented line in  ` /etc/ssh/ssh_config `  that said  ` # ForwardX11 no `  and change  ` no `  to  ` yes ` . 
+* Then added line  ` config.ssh.forward_agent = true `  to my Vagrantfile in addition to  ` config.ssh.forward_x11 = true ` . 
+* Halted my vm with  ` vagrant halt `  and started it back up with  ` vagrant up --provision `  then  ` vagrant ssh ` . 
+* If you get an error that looks like  ` /usr/bin/xauth: timeout in locking authority file /home/vagrant/.Xauthority ` , then enter  ` rm .Xauthority `  (you may have to  ` sudo ` ). 
+* Logout and restart the vm with  ` vagrant up --provision ` . 
+* Test with  ` xeyes ` . If Xquartz is installed on the Mac OS it should open in an Xquartz window.
+It is your responsibility to request a review for this task from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.
+ Task URLs  Github information Repo:
+* GitHub repository:  ` holbertonschool-higher_level_programming ` 
+* Directory:  ` 0x0C-python-almost_a_circle ` 
+* File:  ` models/base.py ` 
+ Self-paced manual review  Panel footer - Controls 
+Ready for a manualsecond review×#### Recommended Sandbox
 [Running only]() 
 ### 1 image(0/5 Sandboxes spawned)
 ### Ubuntu 20.04 - Turtle Python

@@ -1,6 +1,12 @@
 # 0x0A. Python - Inheritance
 ## Details
-      By Guillaume          Weight: 1                Ongoing project - started 01-31-2022, must end by 02-01-2022 (in about 14 hours)          - you're done with 0% of tasks.              Checker will be released at 01-31-2022 06:00 PM              QA review fully automated.      ## Resources
+      By Guillaume          Weight: 1              Project over - took place from 01-31-2022 to 02-01-2022          - you're done with 100% of tasks.              An auto review will be launched at the deadline      #### In a nutshell…
+* Auto QA review:          170.0/170 mandatory            &            0.0/21 optional      
+* Altogether:         100.0%* Mandatory: 100.0%
+* Optional: 0.0%
+*               Calculation:                   100.0%                    + (100.0% * 0.0%)               == 100.0%
+
+## Resources
 Read or watch :
 * [Inheritance](https://intranet.hbtn.io/rltoken/99aGWGmLu8zsaiiJg7HCYQ) 
 
@@ -47,6 +53,8 @@ At the end of this project, you are expected to be able to  [explain to anyone](
 * All your functions (inside and outside a class) should have a documentation ( ` python3 -c 'print(__import__("my_module").my_function.__doc__)' `  and  ` python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)' ` )
 * A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
 * We strongly encourage you to work together on test cases, so that you don’t miss any edge case
+### Documentation
+* Do not use the works  ` import `  or  ` from `  inside your comments, the checker will think you try to import some modules
 ## Quiz questions
 Show
 #### 
@@ -359,7 +367,7 @@ print(u.id)
 
  Quiz question Tips ## Tasks
 ### 0. Lookup
-          mandatory         Progress vs Score  Task Body Write a function that returns the list of available attributes and methods of an object:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that returns the list of available attributes and methods of an object:
 * Prototype:  ` def lookup(obj): ` 
 * Returns a  ` list `  object
 * You are not allowed to import any module
@@ -394,7 +402,7 @@ No test cases needed
 * File:  ` 0-lookup.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 1. My list
-          mandatory         Progress vs Score  Task Body Write a class   ` MyList `   that inherits from   ` list `  :
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a class   ` MyList `   that inherits from   ` list `  :
 * Public instance method:  ` def print_sorted(self): `  that prints the list, but sorted (ascending sort)
 * You can assume that all the elements of the list will be of type  ` int ` 
 * You are not allowed to import any module
@@ -426,7 +434,7 @@ guillaume@ubuntu:~/0x0A$
 * File:  ` 1-my_list.py, tests/1-my_list.txt ` 
  Self-paced manual review  Panel footer - Controls 
 ### 2. Exact same object
-          mandatory         Progress vs Score  Task Body Write a function that returns   ` True `   if the object is  exactly  an instance of the specified class ; otherwise   ` False `  .
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that returns   ` True `   if the object is  exactly  an instance of the specified class ; otherwise   ` False `  .
 * Prototype:  ` def is_same_class(obj, a_class): ` 
 * You are not allowed to import any module
 ```bash
@@ -454,7 +462,7 @@ No test cases needed
 * File:  ` 2-is_same_class.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 3. Same class or inherit from
-          mandatory         Progress vs Score  Task Body Write a function that returns   ` True `   if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise   ` False `  .
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that returns   ` True `   if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise   ` False `  .
 * Prototype:  ` def is_kind_of_class(obj, a_class): ` 
 * You are not allowed to import any module
 ```bash
@@ -483,7 +491,7 @@ No test cases needed
 * File:  ` 3-is_kind_of_class.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 4. Only sub class of
-          mandatory         Progress vs Score  Task Body Write a function that returns   ` True `   if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise   ` False `  .
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that returns   ` True `   if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise   ` False `  .
 * Prototype:  ` def inherits_from(obj, a_class): ` 
 * You are not allowed to import any module
 ```bash
@@ -512,7 +520,7 @@ No test cases needed
 * File:  ` 4-inherits_from.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 5. Geometry module
-          mandatory         Progress vs Score  Task Body Write an empty class   ` BaseGeometry `  .
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write an empty class   ` BaseGeometry `  .
 * You are not allowed to import any module
 ```bash
 guillaume@ubuntu:~/0x0A$ cat 5-main.py
@@ -539,7 +547,7 @@ No test cases needed
 * File:  ` 5-base_geometry.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 6. Improve Geometry
-          mandatory         Progress vs Score  Task Body Write a class   ` BaseGeometry `   (based on   ` 5-base_geometry.py `  ).
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a class   ` BaseGeometry `   (based on   ` 5-base_geometry.py `  ).
 * Public instance method:  ` def area(self): `  that raises an  ` Exception `  with the message  ` area() is not implemented ` 
 * You are not allowed to import any module
 ```bash
@@ -566,7 +574,7 @@ No test cases needed
 * File:  ` 6-base_geometry.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 7. Integer validator
-          mandatory         Progress vs Score  Task Body Write a class   ` BaseGeometry `   (based on   ` 6-base_geometry.py `  ).
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a class   ` BaseGeometry `   (based on   ` 6-base_geometry.py `  ).
 * Public instance method:  ` def area(self): `  that raises an  ` Exception `  with the message  ` area() is not implemented ` 
 * Public instance method:  ` def integer_validator(self, name, value): `  that validates  ` value ` :* you can assume  ` name `  is always a string
 * if  ` value `  is not an integer: raise a  ` TypeError `  exception, with the message  ` <name> must be an integer ` 
@@ -611,7 +619,7 @@ guillaume@ubuntu:~/0x0A$
 * File:  ` 7-base_geometry.py, tests/7-base_geometry.txt ` 
  Self-paced manual review  Panel footer - Controls 
 ### 8. Rectangle
-          mandatory         Progress vs Score  Task Body Write a class   ` Rectangle `   that inherits from   ` BaseGeometry `   (  ` 7-base_geometry.py `  ).
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a class   ` Rectangle `   that inherits from   ` BaseGeometry `   (  ` 7-base_geometry.py `  ).
 * Instantiation with  ` width `  and  ` height ` :  ` def __init__(self, width, height): ` *  ` width `  and  ` height `  must be private. No getter or setter
 *  ` width `  and  ` height `  must be positive integers, validated by  ` integer_validator ` 
 
@@ -650,7 +658,7 @@ No test cases needed
 * File:  ` 8-rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 9. Full rectangle
-          mandatory         Progress vs Score  Task Body Write a class   ` Rectangle `   that inherits from   ` BaseGeometry `   (  ` 7-base_geometry.py `  ).(task based on   ` 8-rectangle.py `  )
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a class   ` Rectangle `   that inherits from   ` BaseGeometry `   (  ` 7-base_geometry.py `  ).(task based on   ` 8-rectangle.py `  )
 * Instantiation with  ` width `  and  ` height ` :  ` def __init__(self, width, height): ` :*  ` width `  and  ` height `  must be private. No getter or setter
 *  ` width `  and  ` height `  must be positive integers validated by  ` integer_validator ` 
 
@@ -679,7 +687,7 @@ No test cases needed
 * File:  ` 9-rectangle.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 10. Square #1
-          mandatory         Progress vs Score  Task Body Write a class   ` Square `   that inherits from   ` Rectangle `   (  ` 9-rectangle.py `  ):
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a class   ` Square `   that inherits from   ` Rectangle `   (  ` 9-rectangle.py `  ):
 * Instantiation with  ` size ` :  ` def __init__(self, size): ` :*  ` size `  must be private. No getter or setter
 *  ` size `  must be a positive integer, validated by  ` integer_validator ` 
 
@@ -707,7 +715,7 @@ No test cases needed
 * File:  ` 10-square.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 11. Square #2
-          mandatory         Progress vs Score  Task Body Write a class   ` Square `   that inherits from   ` Rectangle `   (  ` 9-rectangle.py `  ).(task based on   ` 10-square.py `  ).
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a class   ` Square `   that inherits from   ` Rectangle `   (  ` 9-rectangle.py `  ).(task based on   ` 10-square.py `  ).
 * Instantiation with  ` size ` :  ` def __init__(self, size): ` :*  ` size `  must be private. No getter or setter
 *  ` size `  must be a positive integer, validated by  ` integer_validator ` 
 
@@ -743,7 +751,7 @@ No test cases needed
 ### Ubuntu 20.04
 Basic Ubuntu 20.04, with vim, emacs, curl, wget and all needed for Holberton Foundations
 SSHSFTP[Webterm](https://intranet.hbtn.io/user_containers/17836/webterm) 
-[Stop]() 
+[Destroy]() 
 #### Credentials
 Host4aa76ec2605d.ba0aa7bd.hbtn-cod.ioUsername4aa76ec2605dPassword95896abd009a136e84ba#### Web access
 [HTTPS](https://4aa76ec2605d.ba0aa7bd.hbtn-cod.io/) 

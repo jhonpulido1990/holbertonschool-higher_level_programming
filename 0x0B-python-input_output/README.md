@@ -1,6 +1,12 @@
 # 0x0B. Python - Input/Output
 ## Details
-      By Guillaume          Weight: 1                Ongoing project - started 02-01-2022, must end by 02-02-2022 (in about 16 hours)          - you're done with 0% of tasks.              Checker will be released at 02-01-2022 04:47 PM              QA review fully automated.      ## Resources
+      By Guillaume          Weight: 1              Project over - took place from 02-01-2022 to 02-02-2022          - you're done with 92% of tasks.              An auto review will be launched at the deadline      #### In a nutshell…
+* Auto QA review:          140.0/140 mandatory            &            0.0/21 optional      
+* Altogether:         100.0%* Mandatory: 100.0%
+* Optional: 0.0%
+*               Calculation:                   100.0%                    + (100.0% * 0.0%)               == 100.0%
+
+## Resources
 Read or watch :
 * [7.2. Reading and Writing Files](https://intranet.hbtn.io/rltoken/b1H-khJP64gSE3OXQaRuCA) 
 
@@ -54,7 +60,7 @@ At the end of this project, you are expected to be able to  [explain to anyone](
 * We strongly encourage you to work together on test cases, so that you don’t miss any edge case
 ## Tasks
 ### 0. Read file
-          mandatory         Progress vs Score  Task Body Write a function that reads a text file (  ` UTF8 `  ) and prints it to stdout:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that reads a text file (  ` UTF8 `  ) and prints it to stdout:
 * Prototype:  ` def read_file(filename=""): ` 
 * You must use the  ` with `  statement
 * You don’t need to manage  ` file permission `  or  ` file doesn't exist `  exceptions.
@@ -86,7 +92,7 @@ No test cases needed
 * File:  ` 0-read_file.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 1. Write to a file
-          mandatory         Progress vs Score  Task Body Write a function that writes a string to a text file (  ` UTF8 `  ) and returns the number of characters written:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that writes a string to a text file (  ` UTF8 `  ) and returns the number of characters written:
 * Prototype:  ` def write_file(filename="", text=""): ` 
 * You must use the  ` with `  statement
 * You don’t need to manage file permission exceptions.
@@ -102,7 +108,7 @@ nb_characters = write_file("my_first_file.txt", "This School is so cool!\n")
 print(nb_characters)
 
 guillaume@ubuntu:~/0x0B$ ./1-main.py
-29
+24
 guillaume@ubuntu:~/0x0B$ cat my_first_file.txt
 This School is so cool!
 guillaume@ubuntu:~/0x0B$ 
@@ -115,7 +121,7 @@ No test cases needed
 * File:  ` 1-write_file.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 2. Append to a file
-          mandatory         Progress vs Score  Task Body Write a function that appends a string at the end of a text file (  ` UTF8 `  ) and returns the number of characters added:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that appends a string at the end of a text file (  ` UTF8 `  ) and returns the number of characters added:
 * Prototype:  ` def append_write(filename="", text=""): ` 
 * If the file doesn’t exist, it should be created
 * You must use the  ` with `  statement
@@ -150,7 +156,7 @@ No test cases needed
 * File:  ` 2-append_write.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 3. To JSON string
-          mandatory         Progress vs Score  Task Body Write a function that returns the JSON representation of an object (string):
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that returns the JSON representation of an object (string):
 * Prototype:  ` def to_json_string(my_obj): ` 
 * You don’t need to manage exceptions if the object can’t be serialized.
 ```bash
@@ -201,7 +207,7 @@ No test cases needed
 * File:  ` 3-to_json_string.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 4. From JSON string to Object
-          mandatory         Progress vs Score  Task Body Write a function that returns an object (Python data structure) represented by a JSON string:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that returns an object (Python data structure) represented by a JSON string:
 * Prototype:  ` def from_json_string(my_str): ` 
 * You don’t need to manage exceptions if the JSON string doesn’t represent an object.
 ```bash
@@ -237,7 +243,7 @@ guillaume@ubuntu:~/0x0B$ ./4-main.py
 <class 'list'>
 {'id': 12, 'is_active': True, 'name': 'John', 'info': {'age': 36, 'average': 3.14}, 'places': ['San Francisco', 'Tokyo']}
 <class 'dict'>
-[ValueError] Expecting property name enclosed in double quotes: line 2 column 25 (char 25)
+[JSONDecodeError] Expecting property name enclosed in double quotes: line 2 column 25 (char 25)
 guillaume@ubuntu:~/0x0B$ 
 
 ```
@@ -248,7 +254,7 @@ No test cases needed
 * File:  ` 4-from_json_string.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 5. Save Object to a file
-          mandatory         Progress vs Score  Task Body Write a function that writes an Object to a text file, using a JSON representation:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that writes an Object to a text file, using a JSON representation:
 * Prototype:  ` def save_to_json_file(my_obj, filename): ` 
 * You must use the  ` with `  statement
 * You don’t need to manage exceptions if the object can’t be serialized.
@@ -283,7 +289,7 @@ except Exception as e:
     print("[{}] {}".format(e.__class__.__name__, e))
 
 guillaume@ubuntu:~/0x0B$ ./5-main.py
-[TypeError] {3, 132} is not JSON serializable
+[TypeError] Object of type set is not JSON serializable
 guillaume@ubuntu:~/0x0B$ cat my_list.json ; echo ""
 [1, 2, 3]
 guillaume@ubuntu:~/0x0B$ cat my_dict.json ; echo ""
@@ -300,7 +306,7 @@ No test cases needed
 * File:  ` 5-save_to_json_file.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 6. Create object from a JSON file
-          mandatory         Progress vs Score  Task Body Write a function that creates an Object from a “JSON file”:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that creates an Object from a “JSON file”:
 * Prototype:  ` def load_from_json_file(filename): ` 
 * You must use the  ` with `  statement
 * You don’t need to manage exceptions if the JSON string doesn’t represent an object.
@@ -361,7 +367,7 @@ No test cases needed
 * File:  ` 6-load_from_json_file.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 7. Load, add, save
-          mandatory         Progress vs Score  Task Body Write a script that adds all arguments to a Python list, and then save them to a file:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a script that adds all arguments to a Python list, and then save them to a file:
 * You must use your function  ` save_to_json_file `  from  ` 5-save_to_json_file.py ` 
 * You must use your function  ` load_from_json_file `  from  ` 6-load_from_json_file.py ` 
 * The list must be saved as a JSON representation in a file named  ` add_item.json ` 
@@ -389,7 +395,7 @@ No test cases needed
 * File:  ` 7-add_item.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 8. Class to JSON
-          mandatory         Progress vs Score  Task Body Write a function that returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for JSON serialization of an object:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a function that returns the dictionary description with simple data structure (list, dictionary, string, integer and boolean) for JSON serialization of an object:
 * Prototype:  ` def class_to_json(obj): ` 
 *  ` obj `  is an instance of a Class
 * All attributes of the  ` obj `  Class are serializable: list, dictionary, string, integer and boolean
@@ -485,7 +491,7 @@ No test cases needed
 * File:  ` 8-class_to_json.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 9. Student to JSON
-          mandatory         Progress vs Score  Task Body Write a class   ` Student `   that defines a student by:
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a class   ` Student `   that defines a student by:
 * Public instance attributes: *  ` first_name ` 
 *  ` last_name ` 
 *  ` age ` 
@@ -529,7 +535,7 @@ No test cases needed
 * File:  ` 9-student.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 10. Student to JSON with filter
-          mandatory         Progress vs Score  Task Body Write a class   ` Student `   that defines a student by: (based on   ` 9-student.py `  )
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a class   ` Student `   that defines a student by: (based on   ` 9-student.py `  )
 * Public instance attributes: *  ` first_name ` 
 *  ` last_name ` 
 *  ` age ` 
@@ -569,7 +575,7 @@ No test cases needed
 * File:  ` 10-student.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 11. Student to disk and reload
-          mandatory         Progress vs Score  Task Body Write a class   ` Student `   that defines a student by: (based on   ` 10-student.py `  )
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Write a class   ` Student `   that defines a student by: (based on   ` 10-student.py `  )
 * Public instance attributes: *  ` first_name ` 
 *  ` last_name ` 
 *  ` age ` 
@@ -657,7 +663,7 @@ No test cases needed
 * File:  ` 11-student.py ` 
  Self-paced manual review  Panel footer - Controls 
 ### 12. Pascal's Triangle
-          mandatory         Progress vs Score  Task Body Technical interview preparation : 
+          mandatory         Progress vs Score           Score: 100.00% (Checks completed: 100.00%)         Task Body Technical interview preparation : 
 * You are not allowed to google anything
 * Whiteboard first
 Create a function   ` def pascal_triangle(n): `   that returns a list of lists of integers representing the Pascal’s triangle of   ` n `  :
@@ -706,7 +712,7 @@ guillaume@ubuntu:~/0x0B$
 ### Ubuntu 20.04
 Basic Ubuntu 20.04, with vim, emacs, curl, wget and all needed for Holberton Foundations
 SSHSFTP[Webterm](https://intranet.hbtn.io/user_containers/17836/webterm) 
-[Stop]() 
+[Destroy]() 
 #### Credentials
 Host4aa76ec2605d.ba0aa7bd.hbtn-cod.ioUsername4aa76ec2605dPassword95896abd009a136e84ba#### Web access
 [HTTPS](https://4aa76ec2605d.ba0aa7bd.hbtn-cod.io/) 
