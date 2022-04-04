@@ -2,7 +2,7 @@
 
 let i = 0;
 const args = process.argv;
-if (args[2] === undefined) {
+if (args[2] === undefined || parseInt(args[2] != 'number')) {
   console.log('Missing number of occurrences');
 }
 a = parseInt(args[2]);
