@@ -10,7 +10,10 @@ if (args.length < 4) {
     array.push(parseInt(args[i]));
     i++;
   }
-  array.sort();
+  array.sort(comparer);
   i = array.length - 2;
   console.log(array[i]);
+}
+function comparer (a, b) {
+  return a - b;
 }
