@@ -7,7 +7,6 @@ if (isNaN(parseInt(args[2]))) {
 let i = 0;
 
 while (i < parseInt(args[2])) {
-  charact = 'X'.repeat(args[2]);
-  console.log(charact);
+  console.log('X'.repeat(args[2]));
   i++;
 }
