@@ -11,5 +11,5 @@ while (i < args.length) {
   i++;
 }
 array.sort();
-i = array.length - 1;
+i = array.length - 2;
 console.log(array[i]);
