@@ -7,7 +7,7 @@ module.exports = class Rectangle {
       this.width = w;
       this.height = h;
     } else {
-      return Rectangle.removeClass;
+      return undefined;
     }
   }
 
