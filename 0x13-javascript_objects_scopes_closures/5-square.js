@@ -21,7 +21,7 @@ class Rectangle {
 
   double () {
     this.width = this.width * 2;
-    this.height = this.height *2 ;
+    this.height = this.height * 2;
   }
 
   rotate () {
@@ -29,10 +29,10 @@ class Rectangle {
     this.height = this.width;
     this.width = j;
   }
-};
+}
 
-module.exports = class Square extends Rectangle{
-    constructor (size){
-        super(size, size);
-    }
+module.exports = class Square extends Rectangle {
+  constructor (size) {
+    super(size, size);
+  }
 };

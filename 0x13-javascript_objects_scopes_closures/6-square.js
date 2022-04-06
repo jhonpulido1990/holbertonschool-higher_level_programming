@@ -22,7 +22,7 @@ class Rectangle {
 
   double () {
     this.width = this.width * 2;
-    this.height = this.height *2 ;
+    this.height = this.height * 2;
   }
 
   rotate () {
@@ -30,18 +30,19 @@ class Rectangle {
     this.height = this.width;
     this.width = j;
   }
-};
+}
 
-module.exports = class Square extends Rectangle{
-    constructor (size){
-        super(size, size);
+module.exports = class Square extends Rectangle {
+  constructor (size) {
+    super(size, size);
+  }
+
+  charPrint (c) {
+    if (c === undefined) {
+      this.print();
+    } else {
+      charact = 'C';
+      this.print();
     }
-    charPrint(c){
-        if (c === undefined){
-            this.print();
-        }else{
-            charact = 'C';
-            this.print();
-        }
-    }
+  }
 };
