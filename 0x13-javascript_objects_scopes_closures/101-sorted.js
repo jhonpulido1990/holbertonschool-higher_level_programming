@@ -9,7 +9,6 @@ const arr2 = [];
 const newdict = {};
 for (const key in diction) {
   const value = diction[key];
-  console.log(key + ':' + value);
   if (value === 1) {
     arr.push(key);
     newdict[value] = arr;
