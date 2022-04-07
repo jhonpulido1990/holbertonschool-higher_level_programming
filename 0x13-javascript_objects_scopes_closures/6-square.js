@@ -1,7 +1,7 @@
 #!/usr/bin/node
 let i = 0;
 let j;
-let charact = 'x';
+let charact = 'X';
 class Rectangle {
   constructor (w, h) {
     if (w > 0 && h > 0) {
