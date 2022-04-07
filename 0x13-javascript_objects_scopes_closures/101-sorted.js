@@ -1,24 +1,23 @@
 #!/usr/bin/node
+const dict = require('./101-data').dict;
+const values = Object.values(dict);
+const result = values.filter((item, index) => {
+  return values.indexOf(item) === index;
+});
 
-const dict = require('./101-data');
-
-const diction = dict.dict;
-const arr = [];
-const arr1 = [];
-const arr2 = [];
-const newdict = {};
-for (const key in diction) {
-  const value = diction[key];
-  if (value === 1) {
-    arr.push(key);
-    newdict[value] = arr;
-  } else if (value === 2) {
-    arr1.push(key);
-    newdict[value] = arr1;
-  } else {
-    arr2.push(key);
-    newdict[value] = arr2;
+const newDict = function (lista, dictionaty) {
+  let i = 0;
+  const endDict = {};
+  while (i < lista.length) {
+    const sublist = [];
+    for (const key in dictionaty) {
+      if (dictionaty[key] === lista[i]) {
+        sublist.push(key);
+      }
+    }
+    endDict[lista[i]] = sublist;
+    i++;
   }
-}
-
-console.log(newdict);
+  return endDict;
+};
+console.log(newDict(result, dict));
