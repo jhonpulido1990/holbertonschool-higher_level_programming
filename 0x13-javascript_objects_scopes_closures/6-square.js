@@ -39,7 +39,7 @@ module.exports = class Square extends Rectangle {
 
   charPrint (c) {
     if (c === undefined) {
-      charact = 'X'
+      charact = 'X';
       this.print();
     } else {
       charact = 'C';
