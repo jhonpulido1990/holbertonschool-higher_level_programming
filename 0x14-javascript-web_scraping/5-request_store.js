@@ -7,9 +7,12 @@ const fs = require('fs');
 
 request(url, function (error, response, body) {
   if (error) {
-    console.error(error);
+    console.log(error);
+  } else {
+    fs.writeFile(args[3], body, 'utf8', function (error) {
+      if (error) {
+        console.log(error);
+      }
+    });
   }
-  fs.writeFile(args[3], body, 'utf8', function (error) {
-    console.error(error);
-  });
 });
