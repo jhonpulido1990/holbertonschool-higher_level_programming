@@ -1,25 +1,19 @@
 #!/usr/bin/node
 const request = require('request');
-const args = process.argv;
-const url = args[2];
-request(url, function (error, response, body) {
-    let i = 0;
+const fargs = process.argv;
+request(fargs[2], function (error, response, body) {
   if (error) {
     console.log(error);
-  } else {
-    const characterID = JSON.parse(body).results;
-    const a = Object.values(characterID['0'].characters)
-    while (a[i]){
-        if (a[i].includes('18') === true){
-            request(a[i], function(error, response, body) {
-                if (error) {
-                    console.error(error);
-                }
-                console.log(JSON.parse(body).films.length)
-            } )
-            break;
-        }
-        i++;
+  }
+  let count = 0;
+  const js = JSON.parse(body).results;
+  for (let i = 0; i < js.length; i++) {
+    const character = js[i].characters.find((js) => {
+      return (js.match(/18/));
+    });
+    if (character !== undefined) {
+      count++;
     }
   }
+  console.log(count);
 });
