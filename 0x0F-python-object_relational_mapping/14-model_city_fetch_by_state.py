@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-Write a script that lists all
-State objects from the database
-hbtn_0e_6_usa
+Write a Python file similar to
+model_state.py named model_city.py
+that contains the class definition
+of a City.
 """
 from sys import argv
 from model_state import Base, State
