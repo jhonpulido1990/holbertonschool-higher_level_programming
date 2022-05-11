@@ -17,6 +17,6 @@ if __name__ == "__main__":
     Base.metadata.create_all(engine)
 
     session = Session(engine)
-    for state in session.query(State).filter_by(name=(argv[4])):
+    for state in session.query(State).filter_by(name=(argv[4])).first():
         print("{}".format(state.id))
     session.close()
