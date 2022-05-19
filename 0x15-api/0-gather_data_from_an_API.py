@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-# using this REST API, for a given employee ID, return list progress
+"""using this REST API,
+for a given employee ID,
+return list progress"""
 import requests
 from sys import argv
 
