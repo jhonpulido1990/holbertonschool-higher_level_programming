@@ -2,7 +2,6 @@
 """Write a Python script that fetches
 https://intranet.hbtn.io/status"""
 from urllib.request import urlopen
-import json
 
 if __name__ == "__main__":
     print("Body response:")
