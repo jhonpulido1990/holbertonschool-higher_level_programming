@@ -1,18 +1,15 @@
 #!/usr/bin/python3
-"""
-Write a Python script that fetches
-https://intranet.hbtn.io/status
-"""
-from sys import argv
+"""GitHub credentials (username and password) and
+uses the GitHub API to display your id"""
 import requests
-
+from sys import argv
 
 if __name__ == "__main__":
-    url = 'https://swapi.co/api/people'
-    param = {'search': argv[1]}
-    r = requests.get(url, params=param)
-
-    matching_ppl = r.json()
-    print("Number of results: {}".format(matching_ppl.get('count')))
-    for person in matching_ppl.get('results'):
-        print(person.get('name'))
+    url = "https://api.github.com/user"
+    s = requests.Session()
+    s.auth = (argv[1], argv[2])
+    req = s.get(url)
+    try:
+        print('{}'.format(req.json()['id']))
+    except:
+        print("None")
